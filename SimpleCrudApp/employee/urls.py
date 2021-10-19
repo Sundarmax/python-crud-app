@@ -1,7 +1,7 @@
 from django.urls import path
 from django.conf.urls import url, include
-from .db import *
+from .views import Department
 
 urlpatterns = [
-    #url(r'^filter/data',get_count_of_question_folder),
+    path('departments/', Department.as_view())
 ]
