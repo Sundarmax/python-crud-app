@@ -3,7 +3,6 @@ from django.db.models import fields
 from rest_framework import serializers
 from . models import Department,Employee
 
-# Name the class as (model name + 'Serializer')
 
 class employeeSerializer(serializers.ModelSerializer):
     class Meta:  
