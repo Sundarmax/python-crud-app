@@ -1,11 +1,16 @@
 from typing import ClassVar
+# imports from core django.
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
+from django.urls import reverse_lazy
+
+# imports from djangorest framework
 from rest_framework import response
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import serializers, status
+# imports from current app
 from . models import Employee as employee,Department as department
 from . serializers import employeeSerializer,departmentSerializer
 
